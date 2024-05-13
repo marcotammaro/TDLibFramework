@@ -39,9 +39,10 @@ func getVersion() -> String {
 
     if version.isEmpty {
         version = td_git_tag
-    } else {
-        version = "\(version)-\(td_git_tag)"
     }
+    //else {
+    //    version = "\(version)-\(td_git_tag)"
+    //}
 
     print("TD version: \(version)")
     return version
